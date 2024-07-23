@@ -2,6 +2,10 @@
 
 echo "BUILD START"
 
+# Set MYSQLCLIENT environment variables
+export MYSQLCLIENT_CFLAGS=$(mysql_config --cflags)
+export MYSQLCLIENT_LDFLAGS=$(mysql_config --libs)
+
 # Install dependencies
 python3.9 -m pip install -r requirements.txt
 
