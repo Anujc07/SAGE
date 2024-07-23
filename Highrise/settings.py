@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'Highrise.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'acc-dashboard',
 #         'USER': 'acc-dashboard',
-#         'PASSWORD': 'I2n7t9r@',
+#         'PASSWORD': '',
 #         'HOST': '127.0.0.1',   
 #         'PORT': '3306',
 #     }
@@ -151,7 +151,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['192.168.1.210', '182.70.253.15', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 LOGIN_URL = 'app/login/'
 
